@@ -1,0 +1,185 @@
+.headers {
+  margin-bottom: 140px;
+}
+.headers h1 {
+  text-align: center;
+}
+
+/* Navigation */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navBer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background: aquamarine;
+  padding: 10px 15px;
+}
+
+.navBer ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navBer li {
+  list-style: none;
+}
+.navBer li a {
+  font-size: 16px;
+}
+
+/* CTA  */
+
+.ctaWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  text-align: left;
+}
+
+.ctaWrapper > div {
+  width: 50%;
+}
+
+.ctaBtn {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: aquamarine;
+}
+
+/* blog Section */
+
+.blogWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* contact Form */
+.contactWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.contactInput input {
+  padding: 10px 15px;
+  border: 1px solid aquamarine;
+}
+
+.contactWrapper textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.contactBtn {
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: aquamarine;
+}
+
+/* grid table */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  margin-top: 40px;
+  background-color: aquamarine;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* pagination */
+.paginationWrapper {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: aquamarine;
+  color: white;
+  border: 1px solid black;
+}
+
+/* Media Queries */
+
+/* ==============
+tablet Start responsive Here
+==============*/
+
+@media screen and (max-width: 1024px) {
+  .ctaWrapper {
+    gap: 10px;
+  }
+  .blogWrapper {
+    gap: 20px;
+  }
+  .contactWrapper {
+    gap: 20px;
+  }
+}
+
+/* ============
+  Media query mobile version
+  ==============*/
+
+@media screen and (max-width: 576px) {
+  .navBer {
+    justify-content: center;
+  }
+
+  .ctaWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .blogWrapper {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .contactWrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .contactWrapper img {
+    width: 100%;
+    height: 100%;
+  }
+}
