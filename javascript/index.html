@@ -6,12 +6,32 @@
     <link rel="stylesheet" href="style.css" />
     <title>Practice Javascrip</title>
   </head>
-  <body>
+  <body style="max-width: 1120px; margin: 0 auto">
     <!-- 
     ==============
     Practive Javascript Few Topics
     ==============
  -->
+
+    <!-- jacascript event -->
+    <div class="header">
+      <h1>Javascript Event</h1>
+      <hr />
+      <div>
+        <h4 class="text">Hello world</h4>
+        <button onclick="changeText()" class="btn">Click Me</button>
+      </div>
+
+      <h4 class="textContainer">Write text In Below</h4>
+      <input
+        onchange="(changeTextValue())"
+        class="textValue"
+        placeholder="Write Here"
+        type="text"
+      />
+    </div>
+
+    <!-- javascript Data Type -->
 
     <script src="script.js"></script>
   </body>

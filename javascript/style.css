@@ -1,0 +1,24 @@
+.header {
+  margin-top: 40px;
+}
+
+.header h1 {
+  text-align: center;
+}
+
+/* javascript Event */
+
+.textContainer {
+  margin-top: 100px;
+}
+.btn {
+  padding: 10px 15px;
+  border: none;
+  background: yellow;
+  border-radius: 10px;
+}
+.textValue {
+  padding: 10px 5px;
+  outline: none;
+  border: 1px solid aquamarine;
+}
