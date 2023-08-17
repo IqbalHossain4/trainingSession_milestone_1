@@ -129,39 +129,39 @@ myPromise.then((msg) => console.log(msg)).catch((error) => console.log(error));
 
 // Dom Manipolution
 
-// const link = document.querySelector(".links");
-// link.textContent = "Amazone";
-// link.href = "https://www.amazon.com/";
+const link = document.querySelector(".links");
+link.textContent = "Amazone";
+link.href = "https://www.amazon.com/";
 
-// const sect = document.querySelector(".domBox");
-// const para = document.createElement("p");
-// para.textContent = "We hope you enjoyed the ride.";
-// sect.appendChild(para);
+const sect = document.querySelector(".domBox");
+const para = document.createElement("p");
+para.textContent = "We hope you enjoyed the ride.";
+sect.appendChild(para);
 
-// const text = document.createTextNode("Hello DOM Manipulation");
+const text = document.createTextNode("Hello DOM Manipulation");
 
-// const linkPara = document.querySelector("p");
-// linkPara.appendChild(text);
+const linkPara = document.querySelector("p");
+linkPara.appendChild(text);
 
-// sect.appendChild(linkPara);
+sect.appendChild(linkPara);
 
-// //remove
+//remove
 
-// // sect.removeChild(linkPara);
+// sect.removeChild(linkPara);
 
-// // linkPara.remove();
+// linkPara.remove();
 
-// // linkPara.parentNode.removeChild(linkPara);
+// linkPara.parentNode.removeChild(linkPara);
 
-// // style all components
+// style all components
 
-// para.style.color = "white";
-// para.style.backgroundColor = "black";
-// para.style.padding = "10px";
-// para.style.width = "250px";
-// para.style.textAlign = "center";
+para.style.color = "white";
+para.style.backgroundColor = "black";
+para.style.padding = "10px";
+para.style.width = "250px";
+para.style.textAlign = "center";
 
-// para.setAttribute("class", "highlight");
+para.setAttribute("class", "highlight");
 
 // ES6 Features
 
