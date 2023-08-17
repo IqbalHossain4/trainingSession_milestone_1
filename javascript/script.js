@@ -96,3 +96,119 @@ for (let i = 0; numberArray.length > i; i++) {
   numberContain = numberArray[i] * 2;
   console.log(numberContain);
 }
+
+// Ajax
+
+function loadData() {
+  fetch("https://jsonplaceholder.typicode.com/users")
+    .then((res) => res.json())
+    .then((data) => {
+      document.querySelector(".dataContainer").innerHTML = `
+    <ul>
+    ${data.map((item) => "<li>" + item.name + "</li>")}
+    </ul>
+    `;
+    });
+}
+
+// javascript Promise
+
+let myPromise = new Promise((resolveFunc, rejectFunc) => {
+  let result = 5;
+  if (result == 2) {
+    resolveFunc("Success");
+  } else {
+    rejectFunc("Failed");
+  }
+});
+// myPromise.then((msg) => console.log(`${msg}`));
+
+// myPromise.catch((err) => console.log(`${err}`));
+
+myPromise.then((msg) => console.log(msg)).catch((error) => console.log(error));
+
+// Dom Manipolution
+
+// const link = document.querySelector(".links");
+// link.textContent = "Amazone";
+// link.href = "https://www.amazon.com/";
+
+// const sect = document.querySelector(".domBox");
+// const para = document.createElement("p");
+// para.textContent = "We hope you enjoyed the ride.";
+// sect.appendChild(para);
+
+// const text = document.createTextNode("Hello DOM Manipulation");
+
+// const linkPara = document.querySelector("p");
+// linkPara.appendChild(text);
+
+// sect.appendChild(linkPara);
+
+// //remove
+
+// // sect.removeChild(linkPara);
+
+// // linkPara.remove();
+
+// // linkPara.parentNode.removeChild(linkPara);
+
+// // style all components
+
+// para.style.color = "white";
+// para.style.backgroundColor = "black";
+// para.style.padding = "10px";
+// para.style.width = "250px";
+// para.style.textAlign = "center";
+
+// para.setAttribute("class", "highlight");
+
+// ES6 Features
+
+// let
+let arrr = [10, 40, 50, 70, 10];
+let numb = 10;
+
+for (let i = 0; arrr.length > i; i++) {
+  numb += arrr[i];
+  console.log(numb);
+}
+
+// const
+
+const color = ["yellow", "Red", "Black"];
+
+// color = ["white", "green", "blue"]; // ERROR
+
+const totalP = 100; //allowed
+console.log(totalP);
+
+// Arrow Function
+
+const arrowFunc = (arr) => {
+  let numb = 1;
+  for (let i = 0; arr.length > i; i++) {
+    numb *= arr[i];
+  }
+  return numb;
+};
+
+console.log(arrowFunc(arrr));
+
+// Arrow Methods
+
+const colorsAll = ["yellow", "Red", "Black"];
+
+colorsAll.length;
+colorsAll.toString();
+colorsAll.join(" + ");
+colorsAll.push("White");
+colorsAll.push("Aqua");
+colorsAll.pop();
+colorsAll.unshift("Blue");
+colorsAll.unshift("Violet");
+colorsAll.shift();
+delete colorsAll[0];
+colorsAll.concat(["White", "Yellow"]);
+colorsAll.splice(2, 0, "White", "Orrange");
+colorsAll.slice(-1);

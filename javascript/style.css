@@ -22,3 +22,14 @@
   outline: none;
   border: 1px solid aquamarine;
 }
+li {
+  list-style: none;
+  padding: 8px;
+  background-color: black;
+  color: white;
+}
+
+li:nth-child(even) {
+  background-color: aquamarine;
+  color: black;
+}
